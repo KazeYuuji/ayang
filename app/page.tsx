@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import Confetti from '@/components/Confetti'
 import BirthdayCake from '@/components/BirthdayCake'
 import CuteCharacters from '@/components/CuteCharacters'
@@ -10,7 +10,6 @@ export default function Home() {
   const [showLetter, setShowLetter] = useState(false)
   const [showAnimation, setShowAnimation] = useState(false)
   const [daysUntilBirthday, setDaysUntilBirthday] = useState(0)
-  const audioRef = useRef<HTMLAudioElement | null>(null)
 
   useEffect(() => {
     if (isOpened) {
